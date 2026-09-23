@@ -17,17 +17,15 @@
     <!-- Conecta o CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- ==================================================
-         PADRONIZAÇÃO E ESTILOS PERSONALIZADOS
-         ================================================== -->
+    <!-- PADRONIZAÇÃO E ESTILOS PERSONALIZADOS -->
     <style>
         html {
             scroll-behavior: smooth;
         }
 
-        /* Hero Section com fundo suave */
+        /* Hero Section com fundo suave / superior da tela*/
         .hero {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #d42020 0%, #7a2b27 100%);
             padding: 80px 0;
         }
 
@@ -44,12 +42,12 @@
             width: 100%;
             max-height: 380px;
             border-radius: 8px;
-            background-color: #000;
+            background-color: #7a2b27;
         }
 
         /* Efeito de elevação nos cards de projetos */
         .card.projeto {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .card.projeto:hover {
@@ -57,7 +55,7 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.12);
         }
 
-        /* Ajuste para telas menores */
+        /* Ajuste para telas menores  das fotos(padronzar)*/
         @media (max-width: 768px) {
             #carouselDanca img {
                 height: 220px;
@@ -68,9 +66,7 @@
 
 <body>
 
-    <!-- ==================================================
-         NAVBAR
-         ================================================== -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <!-- Nome do portfólio -->
@@ -95,9 +91,7 @@
     </nav>
 
 
-    <!-- ==================================================
-         HERO
-         ================================================== -->
+    <!-- HERO-->
     <section class="hero text-center">
         <div class="container">
             <h1 class="display-4 fw-bold">Oi, eu sou a Thávine </h1>
@@ -111,9 +105,7 @@
     </section>
 
 
-    <!-- ==================================================
-         SOBRE MIM (ACCORDION)
-         ================================================== -->
+    <!-- SOBRE MIM (ACCORDION) -->
     <section id="sobre" class="container py-5">
         <div class="accordion" id="accordionSobre">
             <div class="accordion-item shadow-sm">
@@ -136,9 +128,7 @@
     </section>
 
 
-    <!-- ==================================================
-         DO CÓDIGO AO RITMO
-         ================================================== -->
+    <!-- DO CÓDIGO AO RITMO -->
     <section class="bg-light py-5">
         <div class="container text-center">
             <h2 class="fw-bold mb-4">Do Código ao Ritmo</h2>
@@ -159,7 +149,7 @@
                     <div class="card h-100 p-4 border-0 shadow-sm">
                         <h3 class="h4 fw-bold text-dark mb-3">Dança</h3>
                         <p class="text-muted mb-0">
-                            Expressão artística, criatividade, disciplina e paixão pelo movimento no palco.
+                            Expressão artística, criatividade. Disciplina e paixão pelo movimento no palco.
                         </p>
                     </div>
                 </div>
@@ -219,7 +209,7 @@
                     <div class="accordion-body">
                         <strong>Prática Corporal e Expressão</strong>
                         <p class="mb-0 mt-2">
-                            Aulas e apresentações de dança desenvolvendo expressão corporal, trabalho em equipe e presença de palco.
+                            Aulas e apresentações de dança desenvolvendo expressão corporal, oficinas de dança com estrutores especializados(Arielle macedo, kiko brow...), trabalho em equipe e presença de palco.
                         </p>
                     </div>
                 </div>
@@ -375,9 +365,7 @@
 </section>
 
 
-    <!-- ==================================================
-         CONTATO
-         ================================================== -->
+    <!-- CONTATO -->
     <section id="contato" class="text-center py-5 bg-light">
         <div class="container">
             <h2 class="fw-bold">Entre em contato</h2>
@@ -408,9 +396,7 @@
     </section>
 
 
-    <!-- ==================================================
-         FOOTER
-         ================================================== -->
+    <!-- FOOTER -->
     <footer class="bg-dark text-white text-center p-3">
         <p class="mb-0">
             © 2026 Thavine
@@ -418,9 +404,7 @@
     </footer>
 
 
-    <!-- ==================================================
-         JAVASCRIPT DO BOOTSTRAP
-         ================================================== -->
+    <!-- JAVASCRIPT DO BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JavaScript próprio (opcional) -->
