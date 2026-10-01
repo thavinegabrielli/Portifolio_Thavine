@@ -3,27 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Adapta o site para celular, tablet e computador -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfólio | Thavine</title>
-
-    <!-- Bootstrap 5: biblioteca utilizada para estilização e componentes -->
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome para ícones modernos (opcional) -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Conecta o CSS personalizado -->
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- PADRONIZAÇÃO E ESTILOS PERSONALIZADOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Thavine</title>
     <style>
         html {
             scroll-behavior: smooth;
         }
 
-        /* Hero Section com fundo suave / superior da tela*/
+        /* banner Section com fundo suave / superior da tela*/
         .hero {
             background: linear-gradient(135deg, #d42020 0%, #7a2b27 100%);
             padding: 80px 0;
@@ -45,7 +39,7 @@
             background-color: #7a2b27;
         }
 
-        /* Efeito de elevação nos cards de projetos */
+        /* Efeito de elevação nos cards */
         .card.projeto {
             transition: transform 0.3s ease;
         }
@@ -55,7 +49,7 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.12);
         }
 
-        /* Ajuste para telas menores  das fotos(padronzar)*/
+        /* Ajuste para telas das fotos */
         @media (max-width: 768px) {
             #carouselDanca img {
                 height: 220px;
@@ -65,152 +59,247 @@
 </head>
 
 <body>
+    <!-- 1. NAVBAR BOOTSTRAP-->
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
+
             <!-- Nome do portfólio -->
             <a class="navbar-brand fw-bold" href="#">Thavine</a>
 
-            <!-- Botão Hambúrguer para telas pequenas -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- Botão Hambúrguer -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
-            <!-- Links de Navegação -->
+            <!-- Menu da Navbar -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
                 <div class="navbar-nav gap-2 mt-2 mt-lg-0">
+
                     <a href="#sobre" class="btn btn-outline-light btn-sm">Sobre</a>
+
                     <a href="#formacoes" class="btn btn-outline-light btn-sm">Formações</a>
+
                     <a href="#danca" class="btn btn-outline-light btn-sm">Dança</a>
+
                     <a href="#projetos" class="btn btn-outline-light btn-sm">Projetos</a>
+
                     <a href="#contato" class="btn btn-outline-light btn-sm">Contato</a>
+
                 </div>
             </div>
         </div>
     </nav>
 
-
-    <!-- HERO-->
+    <!-- "banner??"-->
     <section class="hero text-center">
+
         <div class="container">
+
             <h1 class="display-4 fw-bold">Oi, eu sou a Thávine </h1>
+
             <p class="lead text-muted fs-4">
                 Estudante de Análise e Desenvolvimento de Sistemas
             </p>
+
             <a href="#projetos" class="btn btn-dark btn-lg mt-3">
                 Ver projetos
             </a>
+
         </div>
     </section>
 
+    <!-- 2. ACCORDION -->
 
     <!-- SOBRE MIM (ACCORDION) -->
     <section id="sobre" class="container py-5">
+
         <div class="accordion" id="accordionSobre">
+
             <div class="accordion-item shadow-sm">
-                <!-- Botão do acordeão -->
+
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#sobreMim">
-                        Um pouco mais sobre a Thávine
+
+                    <button class="accordion-button collapsed fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#sobreMim">
+
+                        Um pouco mais sobre a mim
+
                     </button>
+
                 </h2>
 
-                <!-- Conteúdo que aparece ao clicar -->
-                <div id="sobreMim" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+                <div id="sobreMim"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#accordionSobre">
+
                     <div class="accordion-body text-center p-4">
+
                         <p class="mb-0 fs-5">
                             Tenho 18 anos e sou apaixonada pela união entre a lógica da tecnologia e a arte do movimento. Em 2025, concluí o Ensino Médio no SESI de Sertãozinho e me formei no curso Técnico em Análise e Desenvolvimento de Sistemas no SENAI Sertãozinho. 
-                            Além dos códigos, o palco é onde me expresso: estudo dança com foco em Jazz, Lyrical Jazz e Contemporâneo, trazendo também na bagagem experiências com Ballet e Danças Urbanas. Acredito que a disciplina, o ritmo e a criatividade da dança se refletem diretamente na forma como desenvolvo softwares: criando projetos eficientes, elegantes e cheios de propósito.            </div>
+                            Além dos códigos, o palco é onde me expresso: estudo dança com foco em Jazz, Lyrical Jazz e Contemporâneo, trazendo também na bagagem experiências com Ballet e Danças Urbanas. Acredito que a disciplina, o ritmo e a criatividade da dança se refletem diretamente na forma como desenvolvo softwares: criando projetos eficientes, elegantes e cheios de propósito.
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- DO CÓDIGO AO RITMO -->
     <section class="bg-light py-5">
+
         <div class="container text-center">
+
             <h2 class="fw-bold mb-4">Do Código ao Ritmo</h2>
 
             <div class="row g-4">
+
                 <!-- Primeiro Card -->
                 <div class="col-md-6">
+
                     <div class="card h-100 p-4 border-0 shadow-sm">
+
                         <h3 class="h4 fw-bold text-dark mb-3">ADS</h3>
+
                         <p class="text-muted mb-0">
                             Programação, estrutura de dados, raciocínio lógico e criação de soluções tecnológicas.
                         </p>
+
                     </div>
                 </div>
 
                 <!-- Segundo Card -->
                 <div class="col-md-6">
+
                     <div class="card h-100 p-4 border-0 shadow-sm">
+
                         <h3 class="h4 fw-bold text-dark mb-3">Dança</h3>
+
                         <p class="text-muted mb-0">
                             Expressão artística, criatividade. Disciplina e paixão pelo movimento no palco.
                         </p>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
 
-    <!--  FORMAÇÕES -->
+    <!-- 2. ACCORDION — FORMAÇÕES -->
+
+    <!-- FORMAÇÕES -->
     <section id="formacoes" class="container py-5">
+
         <h2 class="text-center fw-bold mb-4">Minhas formações</h2>
 
         <div class="accordion" id="accordionFormacoes">
 
+
             <!-- FORMAÇÃO 1 -->
             <div class="accordion-item shadow-sm">
+
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#formacao1">
+
+                    <button class="accordion-button collapsed fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#formacao1">
+
                         Análise e Desenvolvimento de Sistemas (Técnico)
+
                     </button>
+
                 </h2>
-                <div id="formacao1" class="accordion-collapse collapse" data-bs-parent="#accordionFormacoes">
+
+                <div id="formacao1"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#accordionFormacoes">
+
                     <div class="accordion-body">
+
                         <strong>SENAI Sertãozinho</strong>
+
                         <p class="mb-0 mt-2">
                             Formação focada em desenvolvimento de software, lógica de programação, banco de dados e metodologias ágeis.
                         </p>
+
                     </div>
                 </div>
             </div>
+
 
             <!-- FORMAÇÃO 2 -->
             <div class="accordion-item shadow-sm">
+
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#formacao2">
+
+                    <button class="accordion-button collapsed fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#formacao2">
+
                         Cursos superior em Analise e Desenvolvimento de Sistema
+
                     </button>
+
                 </h2>
-                <div id="formacao2" class="accordion-collapse collapse" data-bs-parent="#accordionFormacoes">
+
+                <div id="formacao2"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#accordionFormacoes">
+
                     <div class="accordion-body">
+
                         <strong>Curso superior em Análise e Desenvolvimento de Sistemas</strong>
+
                         <p class="mb-0 mt-2">
-                              Atualmente curso o ensino superior no senai de Riberão Preto. Atualmente estou cursando o segundo semestre.
+                            Atualmente curso o ensino superior no senai de Riberão Preto. Atualmente estou cursando o segundo semestre.
                         </p>
+
                     </div>
                 </div>
             </div>
 
+
             <!-- FORMAÇÃO 3 -->
             <div class="accordion-item shadow-sm">
+
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#formacao3">
-                        Formação Artística e Dança
+
+                    <button class="accordion-button collapsed fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#formacao3">
+
+                        Formação Artística em Dança
+
                     </button>
+
                 </h2>
-                <div id="formacao3" class="accordion-collapse collapse" data-bs-parent="#accordionFormacoes">
+
+                <div id="formacao3"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#accordionFormacoes">
+
                     <div class="accordion-body">
+
                         <strong>Prática Corporal e Expressão</strong>
+
                         <p class="mb-0 mt-2">
                             Aulas e apresentações de dança desenvolvendo expressão corporal, oficinas de dança com estrutores especializados(Arielle macedo, kiko brow...), trabalho em equipe e presença de palco.
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -219,197 +308,321 @@
     </section>
 
 
+    <!-- 4. CAROUSEL -->
+
     <!-- DANÇA -->
     <section id="danca" class="container py-5 text-center">
+
         <h2 class="fw-bold">Meu lugar no palco</h2>
+
         <p class="text-muted">
             A dança é uma forma de me expressar, sentir e transformar sentimentos em movimento.
         </p>
 
-        <!-- Carousel Bootstrap -->
-        <div id="carouselDanca" class="carousel slide mt-4" data-bs-ride="carousel">
+
+        <!-- CAROUSEL BOOTSTRAP -->
+        <div id="carouselDanca"
+             class="carousel slide mt-4"
+             data-bs-ride="carousel">
+
             <div class="carousel-inner">
+
 
                 <!-- PRIMEIRO SLIDE -->
                 <div class="carousel-item active">
+
                     <div class="row g-2">
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca1.jpeg" class="img-fluid rounded" alt="Foto de dança 1">
+                            <img src="img/danca1.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 1">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca2.jpeg" class="img-fluid rounded" alt="Foto de dança 2">
+                            <img src="img/danca2.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 2">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca3.jpeg" class="img-fluid rounded" alt="Foto de dança 3">
+                            <img src="img/danca3.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 3">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca5.jpeg" class="img-fluid rounded" alt="Foto de dança 4">
+                            <img src="img/danca5.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 4">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca6.jpeg" class="img-fluid rounded" alt="Foto de dança 5">
+                            <img src="img/danca6.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 5">
                         </div>
+
                     </div>
                 </div>
 
                 <!-- SEGUNDO SLIDE -->
                 <div class="carousel-item">
+
                     <div class="row g-2">
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca6.jpeg" class="img-fluid rounded" alt="Foto de dança 6">
+                            <img src="img/danca6.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 6">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca7.jpeg" class="img-fluid rounded" alt="Foto de dança 7">
+                            <img src="img/danca7.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 7">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca8.jpeg" class="img-fluid rounded" alt="Foto de dança 8">
+                            <img src="img/danca8.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 8">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/danca9.jpeg" class="img-fluid rounded" alt="Foto de dança 9">
+                            <img src="img/danca9.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 9">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md">
-                            <img src="img/imagem10.jpeg" class="img-fluid rounded" alt="Foto de dança 10">
+                            <img src="img/imagem10.jpeg"
+                                 class="img-fluid rounded"
+                                 alt="Foto de dança 10">
                         </div>
+
                     </div>
                 </div>
 
+
                 <!-- TERCEIRO SLIDE: VÍDEO -->
                 <div class="carousel-item">
+
                     <div class="d-flex justify-content-center">
+
                         <video class="danca-video" controls>
+
                             <source src="img/video1.mp4" type="video/mp4">
+
                             Seu navegador não suporta a exibição deste vídeo.
+
                         </video>
+
                     </div>
                 </div>
 
             </div>
 
-            <!-- Botões de Controle -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDanca" data-bs-slide="prev">
+
+            <!-- BOTÃO ANTERIOR -->
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselDanca"
+                    data-bs-slide="prev">
+
                 <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselDanca" data-bs-slide="next">
+
+
+            <!-- BOTÃO PRÓXIMO -->
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselDanca"
+                    data-bs-slide="next">
+
                 <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+
             </button>
+
         </div>
     </section>
 
 
+    <!-- 3. CARD + 5. BADGES -->
+
     <!-- PROJETOS -->
-<section id="projetos" class="container py-5">
-    <h2 class="text-center fw-bold mb-4">Meus projetos</h2>
+    <section id="projetos" class="container py-5">
 
-    <div class="row g-4 mt-1">
+        <h2 class="text-center fw-bold mb-4">Meus projetos</h2>
 
-        <!-- PROJETO 1 -->
-        <div class="col-md-4">
-            <a href="https://github.com/jmr230584/frontend-devteam.git" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-decoration-none text-dark">
+        <div class="row g-4 mt-1">
 
-                <div class="card projeto h-100 p-3 border-0 shadow-sm">
-                    <h4 class="fw-bold">EstoqueTech</h4>
-                    <p class="text-muted">
-                        Sistema para gerenciamento de EPI industrial, referente à seminario de conclusão do curso tecnico de ADS.
-                    </p>
-                    <div>
-                        <span class="badge bg-dark">HTML</span>
-                        <span class="badge bg-secondary">CSS</span>
+
+            <!-- PROJETO 1 -->
+            <div class="col-md-4">
+
+                <a href="https://github.com/jmr230584/frontend-devteam.git" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="text-decoration-none text-dark">
+
+
+                    <!-- CARD BOOTSTRAP -->
+                    <div class="card projeto h-100 p-3 border-0 shadow-sm">
+
+                        <h4 class="fw-bold">EstoqueTech</h4>
+
+                        <p class="text-muted">
+                            Sistema para gerenciamento de EPI industrial, referente à seminario de conclusão do curso tecnico de ADS.
+                        </p>
+
+
+                        <!-- BADGES BOOTSTRAP -->
+                        <div>
+
+                            <span class="badge bg-dark">HTML</span>
+
+                            <span class="badge bg-secondary">CSS</span>
+
+                        </div>
+
                     </div>
-                </div>
-            </a>
-        </div>
 
-        <!-- PROJETO 2 -->
-        <div class="col-md-4">
-            <a href="https://www.ongresgatinhosrp.com.br/" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-decoration-none text-dark">
+                </a>
+            </div>
+            <!-- PROJETO 2 -->
+            <div class="col-md-4">
 
-                <div class="card projeto h-100 p-3 border-0 shadow-sm">
-                    <h4 class="fw-bold">ResGatinhos 😸</h4>
-                    <p class="text-muted">
-                        Projeto desenvolvido em colaboração com a ONG ResGatinhos, incentivo e facilitação de adoção de gatinhos.
-                    </p>
-                    <div>
-                        <span class="badge bg-dark">HTML</span>
-                        <span class="badge bg-secondary">CSS / JS</span>
+                <a href="https://www.ongresgatinhosrp.com.br/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="text-decoration-none text-dark">
+
+
+                    <!-- CARD BOOTSTRAP -->
+                    <div class="card projeto h-100 p-3 border-0 shadow-sm">
+
+                        <h4 class="fw-bold">ResGatinhos 😸</h4>
+
+                        <p class="text-muted">
+                            Projeto desenvolvido em colaboração com a ONG ResGatinhos, incentivo e facilitação de adoção de gatinhos.
+                        </p>
+
+
+                        <!-- BADGES BOOTSTRAP -->
+                        <div>
+
+                            <span class="badge bg-dark">HTML</span>
+
+                            <span class="badge bg-secondary">CSS / JS</span>
+
+                        </div>
+
                     </div>
-                </div>
-            </a>
-        </div>
 
-        <!-- PROJETO 3 -->
-        <div class="col-md-4">
-            <a href="https://github.com/L-pf0/Projeto-Integrador-2---PINT" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="text-decoration-none text-dark">
+                </a>
+            </div>
 
-                <div class="card projeto h-100 p-3 border-0 shadow-sm">
-                    <h4 class="fw-bold">RadarMind</h4>
-                    <p class="text-muted">
-                        Sistema de Integração Corporativa entre Empresa Matriz e Subempresas do setor de Agronegócio
-                    </p>
-                    <div>
-                        <span class="badge bg-dark">HTML</span>
-                        <span class="badge bg-secondary">CSS / JS</span>
+
+            <!-- PROJETO 3 -->
+            <div class="col-md-4">
+
+                <a href="https://github.com/L-pf0/Projeto-Integrador-2---PINT" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="text-decoration-none text-dark">
+
+
+                    <!-- CARD BOOTSTRAP -->
+                    <div class="card projeto h-100 p-3 border-0 shadow-sm">
+
+                        <h4 class="fw-bold">RadarMind</h4>
+
+                        <p class="text-muted">
+                            Sistema de Integração Corporativa entre Empresa Matriz e Subempresas do setor de Agronegócio
+                        </p>
+
+
+                        <!-- BADGES BOOTSTRAP -->
+                        <div>
+
+                            <span class="badge bg-dark">HTML</span>
+
+                            <span class="badge bg-secondary">CSS / JS</span>
+
+                        </div>
+
                     </div>
-                </div>
-            </a>
-        </div>
 
-    </div>
-</section>
+                </a>
+            </div>
+
+        </div>
+    </section>
 
 
     <!-- CONTATO -->
     <section id="contato" class="text-center py-5 bg-light">
+
         <div class="container">
+
             <h2 class="fw-bold">Entre em contato</h2>
+
             <p class="text-muted mb-4">
                 Você pode me encontrar pelas redes sociais:
             </p>
 
+
             <div class="d-flex justify-content-center flex-wrap gap-2">
-                <!-- Substitua 'seu-usuario' pelos seus links reais -->
-                <a href="https://github.com/thavinegabrielli" target="_blank" class="btn btn-dark">
+
+                <a href="https://github.com/thavinegabrielli"
+                   target="_blank"
+                   class="btn btn-dark">
+
                     GitHub
+
                 </a>
 
-                <a href="https://www.instagram.com/thv.gabrielli/" target="_blank" class="btn btn-dark">
+
+                <a href="https://www.instagram.com/thv.gabrielli/"
+                   target="_blank"
+                   class="btn btn-dark">
+
                     Instagram
-                </a>
 
-                <a href="https://www.linkedin.com/in/th%C3%A1vine-nardin-2378443b3/" target="_blank" class="btn btn-dark">
+                </a>
+                <a href="https://www.linkedin.com/in/th%C3%A1vine-nardin-2378443b3/"
+                   target="_blank"
+                   class="btn btn-dark">
+
                     LinkedIn
-                </a>
 
-                <!-- Alerta simples ao clicar no botão -->
-                <button onclick="alert('Meu e-mail é: thavinegabrielli@gmail.com')" class="btn btn-dark">
+                </a>
+                <button onclick="alert('Meu e-mail é: thavinegabrielli@gmail.com')"
+                        class="btn btn-dark">
+
                     E-mail
+
                 </button>
+
             </div>
         </div>
     </section>
 
-
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center p-3">
+
         <p class="mb-0">
             © 2026 Thavine
         </p>
+
     </footer>
-
-
     <!-- JAVASCRIPT DO BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JavaScript próprio (opcional) -->
+    <!-- JavaScript próprio -->
     <script src="script.js"></script>
 
 </body>
-
 </html>
